@@ -94,18 +94,16 @@ $stat-font-size: 40px;
 // 5. Button
 // ---------
 
-$button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
-);
-$button-font-size: (
-  tiny: 10px,
-  small: 12px,
-  default: 16px,
-  large: 20px,
-);
+$button-padding-tiny: 4px 8px 4px 8px;
+$button-padding-small: 5px 10px 5px 10px;
+$button-padding-default: 8px 16px 8px 16px;
+$button-padding-large: 10px 20px 10px 20px;
+
+$button-font-size-tiny: 10px;
+$button-font-size-small: 12px;
+$button-font-size-default: 16px;
+$button-font-size-large: 20px;
+
 $button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: bold;

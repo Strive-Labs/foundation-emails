@@ -7,22 +7,16 @@
 ////
 
 /// Padding inside buttons at various sizes.
-/// @type Map
-$button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
-) !default;
+$button-padding-tiny: 4px 8px 4px 8px;
+$button-padding-small: 5px 10px 5px 10px;
+$button-padding-default: 8px 16px 8px 16px;
+$button-padding-large: 10px 20px 10px 20px;
 
 /// Font sizes of buttons at various sizes.
-/// @type Map
-$button-font-size: (
-  tiny: 10px,
-  small: 12px,
-  default: 16px,
-  large: 20px,
-) !default;
+$button-font-size-tiny: 10px;
+$button-font-size-small: 12px;
+$button-font-size-default: 16px;
+$button-font-size-large: 20px;
 
 /// Text color of buttons.
 /// @type Color
@@ -71,13 +65,13 @@ table.button {
 
       a {
         font-family: $body-font-family;
-        font-size: map-get($button-font-size, default);
+        font-size: $button-font-size-default;
         font-weight: $button-font-weight;
         color: $button-color;
         text-decoration: none;
         text-align: left;
         display: inline-block;
-        padding: map-get($button-padding, default);
+        padding: $button-padding-default;
         border: 0 solid $button-background;
         border-radius: $button-radius;
       }
@@ -114,11 +108,11 @@ table.button.tiny {
   table {
     td,
     a {
-      padding: map-get($button-padding, tiny);
+      padding: $button-padding-tiny;
     }
 
     a {
-      font-size: map-get($button-font-size, tiny);
+      font-size: $button-font-size-tiny;
       font-weight: normal;
     }
   }
@@ -128,8 +122,8 @@ table.button.small {
   table {
     td,
     a {
-      padding: map-get($button-padding, small);
-      font-size: map-get($button-font-size, small);
+      padding: $button-padding-small;
+      font-size: $button-font-size-small;
     }
   }
 }
@@ -137,8 +131,8 @@ table.button.small {
 table.button.large {
   table {
     a {
-      padding: map-get($button-padding, large);
-      font-size: map-get($button-font-size, large);
+      padding: $button-padding-large;
+      font-size: $button-font-size-large;
     }
   }
 }
